@@ -117,51 +117,54 @@ header li{
 
     
 }
-/*Information*/
+/*Information & Thesis*/
 
-#information .desktop {
+.desktop {
     display: flex;
     align-items:flex-start;
     justify-content: space-evenly;
 }
 
-#information .main {
+ .main, .main2 {
     width:60%;
     height:auto;
     margin: 32px 24px;
 
-    box-sizing:border-box;
+    
     
 }
 
-.main img {
+ .main img {
     width:100%;
 }
 
-.flex-container {
+ .flex-container {
     box-sizing:border-box;
     margin:32px 0;
 
-    
+    display:flex;
     flex-direction:column;
     justify-content:space-between;
-    align-items: center;
+    align-items: flex-start;
+
+    width:40%;
 
 
 }
-.box{
+ .box{
     display:flex;
     justify-content:flex-start;
     align-items: center;
+    
 }
 
-.box img{
+ .box img{
     width:35%;
     height:auto;
     margin:16px;
 }
 
-.box span{
+ .box span{
     margin-left:20px;
 }
 
@@ -226,49 +229,26 @@ header li{
         margin-bottom:8px;
         width: 75%;
     }
+}
 /*Thesis*/
 
 #thesis h1{
     text-align:center;
 }
 
-#thesis .desktop{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-
-}
-
-#thesis .main{
-    width:60%; 
-    height:auto;
-    margin: 32px 24px;
-    box-sizing:border-box;
-}
-
-#thesis .main video{
+#thesis .main2 video{
     width:100%;
     height:auto;
 }
 
-#thesis flex-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+
 
 @media only screen and (max-width:760px){
     #thesis .desktop{
         display:none;
     }
 
-    #thesis .mobile video{
-        width: 100%;
-        height:auto;
-        margin-top:16px;
-        margin-bottom: 24px;
-    }
+    
 }
 
 /*Footer*/
