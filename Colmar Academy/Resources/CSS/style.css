@@ -125,13 +125,10 @@ header li{
     justify-content: space-evenly;
 }
 
- .main, .main2 {
+ .main {
     width:60%;
     height:auto;
-    margin: 32px 24px;
-
-    
-    
+    margin: 32px 24px;    
 }
 
  .main img {
@@ -148,10 +145,10 @@ header li{
     align-items: flex-start;
 
     width:40%;
-
-
 }
- .box{
+
+
+.box{
     display:flex;
     justify-content:flex-start;
     align-items: center;
@@ -173,8 +170,16 @@ header li{
         display:none;
     }
 
+    #information .mobile{
+        box-sizing:border-box;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     #information .mobile img{
-        margin:16px;
+        width: 100%;
     }
 
     #information .mobile .caption{
@@ -193,7 +198,7 @@ header li{
 
 #start-learning .flex-container2{
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:flex-start;
     flex-wrap:wrap;
     align-content:center;
@@ -205,6 +210,8 @@ header li{
 #start-learning .box2{
    width: 375px;
    height:auto;
+   margin-left:16px;
+   margin-right:16px;
 }
 
 .box2 img{
@@ -236,7 +243,7 @@ header li{
     text-align:center;
 }
 
-#thesis .main2 video{
+#thesis .main video{
     width:100%;
     height:auto;
 }
