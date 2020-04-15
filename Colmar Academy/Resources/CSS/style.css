@@ -9,10 +9,11 @@ main, footer{
 
 /*Desktop*/
 
-.mobile{
-    display:none;
+@media only screen and (min-width:761px){
+    .mobile{
+        display:none;
+    }
 }
-
 /*Header*/
 
 header{
@@ -58,6 +59,25 @@ header li{
     font-family:sans-serif;
 }
 
+@media only screen and (max-width:760px){
+    header .desktop{
+        display:none;
+    }
+
+    header .mobile nav{
+        width:100%;
+        margin: 0 12px;
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:wrap;
+
+    }
+}
+
 /*Banner*/
 
 #banner{
@@ -69,15 +89,34 @@ header li{
 }
 
 #banner img{
-    max-width:60%;
+    width:60%;
     height: auto;
     margin: 32px 24px;
 }
 
-#banner .writing{
+@media only screen and (max-width:760px){
+    #banner {
+        display: block;
+    }
+
+    #banner img{
+        width:100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #banner .writing{
+        margin:16px;
+    }
+
+    #banner .link {
+        text-align:center;
+        margin-top: 24px;
+        margin-bottom:32px;
+    }
+
     
 }
-
 /*Information*/
 
 #information .desktop {
@@ -109,7 +148,6 @@ header li{
     align-items: center;
 
 
-
 }
 .box{
     display:flex;
@@ -126,6 +164,22 @@ header li{
 .box span{
     margin-left:20px;
 }
+
+@media only screen and (max-width:760px){
+    #information .desktop{
+        display:none;
+    }
+
+    #information .mobile img{
+        margin:16px;
+    }
+
+    #information .mobile .caption{
+        margin: 16px 32px;
+
+    }
+}
+
 
 /*Start Learning*/
 
@@ -155,6 +209,23 @@ header li{
     height:auto;
 }
 
+@media only screen and (max-width:760px) {
+    #start-learning .desktop {
+        display:none;
+    }
+    
+    #start-learning .mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #start-learning .mobile a{
+        padding: 16px 16px 24px 16px;
+        margin-bottom:8px;
+        width: 75%;
+    }
 /*Thesis*/
 
 #thesis h1{
@@ -187,6 +258,19 @@ header li{
     align-items: flex-start;
 }
 
+@media only screen and (max-width:760px){
+    #thesis .desktop{
+        display:none;
+    }
+
+    #thesis .mobile video{
+        width: 100%;
+        height:auto;
+        margin-top:16px;
+        margin-bottom: 24px;
+    }
+}
+
 /*Footer*/
 
 footer h4{
@@ -203,4 +287,10 @@ footer nav{
 footer li{
     display: inline-block;
     margin-right:16px;
+}
+
+@media only screen and (max-width: 760px){
+    footer nav{
+        display:none;
+    }
 }
